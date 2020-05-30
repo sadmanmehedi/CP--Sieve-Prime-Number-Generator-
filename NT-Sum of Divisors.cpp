@@ -24,6 +24,7 @@ void sieve()
 }
 
 ///NOT EFFICIENT ALGO
+
 int divisorSum1(int n) {
     int cnt = 0;
     for (int i = 1; i * i <= n; i++) {
@@ -36,6 +37,32 @@ int divisorSum1(int n) {
     return cnt;
 }
 
+///EFFICIENT ALGO
+
+int divisorSum2(int n)
+{
+    if (n < 1) return 0;
+    int sum = 1;
+    for (int i = 0; primes[i]*primes[i] <= n; i++)
+    {
+        if (n % primes[i] == 0)
+        {
+            int cnt = 1;
+            while (n % primes[i] == 0)
+            {
+                n /= primes[i];
+                cnt++;
+            }
+            sum *= (powl(primes[i], cnt) - 1) / (primes[i] - 1);
+        }
+    }
+    if (n > 1) sum *= (powl(n, 2) - 1) / (n - 1);
+    /*
+     * this is just a formula of a series (1 + p + p^2 + ... + p^n)
+     * = ((p^(n+1)) - 1)/(p-1)
+     */
+    return sum;
+}
 
 int main()
 {

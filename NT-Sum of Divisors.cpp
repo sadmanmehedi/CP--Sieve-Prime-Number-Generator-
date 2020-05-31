@@ -39,15 +39,16 @@ int divisorSum1(int n) {
 
 ///EFFICIENT ALGO
 
-int divisorSum2(int n)
+long long  divisorSum2(long long  n)
 {
     if (n < 1) return 0;
-    int sum = 1;
-    for (int i = 0; primes[i]*primes[i] <= n; i++)
+    long long sum = 1;
+    long long p=primes.size();
+    for (long long  i = 0; primes[i]*primes[i]<= n && i<p; i++)
     {
         if (n % primes[i] == 0)
         {
-            int cnt = 1;
+            long long  cnt = 1;
             while (n % primes[i] == 0)
             {
                 n /= primes[i];
@@ -57,10 +58,6 @@ int divisorSum2(int n)
         }
     }
     if (n > 1) sum *= (powl(n, 2) - 1) / (n - 1);
-    /*
-     * this is just a formula of a series (1 + p + p^2 + ... + p^n)
-     * = ((p^(n+1)) - 1)/(p-1)
-     */
     return sum;
 }
 

@@ -16,6 +16,7 @@ int main()
     cout<<gcd(a,b);
 
  }
+///ITS COMPLEXITY IS SAME AS _gcd(a,b) BUILT IN FUNCTION IN C++
  
  
  

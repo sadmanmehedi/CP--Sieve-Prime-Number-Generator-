@@ -1,3 +1,6 @@
+///PROBLEM LINK:https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3194
+///VIDEO REF:https://www.youtube.com/watch?v=x9KMLQa6G5w
+
 #include<bits/stdc++.h>
 using namespace std;
 

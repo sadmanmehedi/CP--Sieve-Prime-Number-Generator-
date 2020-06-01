@@ -1,4 +1,6 @@
 ///ARO EFFICIENT EKTA ALGO ASA DEKTE HBE GFG THEKE
+///PROBLEM:http://lightoj.com/login_main.php?url=volume_showproblem.php?problem=1028
+///VIDEO REF:https://www.youtube.com/watch?v=x9KMLQa6G5w
 
 #include<bits/stdc++.h>
 using namespace std;

@@ -1,15 +1,12 @@
-//https://www.spoj.com/problems/PRIME1/
 #include <bits/stdc++.h>
-#include <iostream>
-#define MAX 32000
-
 using namespace std;
 
 using ll = long long;
 vector<bool> flag(1000000, true);
 vector<int> primes;
 
-void sieve() {
+void sieve()
+ {
 	flag[0] = false;
 	flag[1] = false;
 
@@ -26,27 +23,49 @@ void sieve() {
 
 }
 
-void segSieve (ll l, ll r) {
+void segSieve (ll l, ll r)
+{
     bool isPrime[r-l+1];
-    for (int i = 0; i < r - l + 1; ++i) isPrime[i] = true;
-    if (l == 1) isPrime[0] = false;
-    for (int i = 0; primes[i]*primes[i] <= r; ++i) {
-        int currentPrime = primes[i];
+    
+    for (int i = 0; i < r - l + 1; ++i)
+    {
+        isPrime[i] = true;
+        
+    }
+    if (l == 1)
+        isPrime[0] = false;
+    
+    for (long long i = 0; primes[i]*primes[i] <= r; i++)
+    {
+        long long currentPrime = primes[i];
+        
         ll base = (l/currentPrime)*currentPrime;
+        
         if (base < l) base += currentPrime;
-        for (ll j = base; j <= r; j += currentPrime) {
+        
+        for (ll j = base; j <= r; j += currentPrime)
+        {
             isPrime[j-l] = false;
         }
-        if (base == currentPrime) isPrime[base-l] = true;
+      
+       if (base == currentPrime) 
+        isPrime[base-l] = true;
+    
     }
-    for (int i = 0; i < r - l + 1; ++i) {
-        if (isPrime[i]) cout << (i+l) << endl;
+    
+    for (int i = 0; i < r - l + 1; ++i)
+    {
+        if (isPrime[i]) 
+        cout << (i+l) << endl;
+   
     }
+    
     puts("");
+
 }
 
 int main() {
-//    freopen("input", "r", stdin);
+
     sieve();
     int t;
     cin >> t;

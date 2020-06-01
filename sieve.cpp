@@ -22,3 +22,4 @@ void sieve() {
 }
 
 int main() { }
+///BITWISE SIEVE SHIKTE HOBE

@@ -70,12 +70,16 @@ void segSieve (ll l, ll r)
 
 }
 
-int main() {
+int main()
+{
 
     sieve();
-    int t;
+    
+    int t; 
     cin >> t;
-    while (t--) {
+    
+    while (t--) 
+    {
         ll l, r;
         cin >> l >> r;
         segSieve(l, r);

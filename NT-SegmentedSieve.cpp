@@ -1,3 +1,9 @@
+///WE COULD USE 32000 INSTEAD OF 1000000
+///ALWAYS AND ALWAYS THE CONSTRAIN MUST BE L and R (1 <= L <= R <= 1000000000, R-L<=100000) 
+///PROBLEM:https://vjudge.net/problem/SPOJ-PRIME1/origin
+///VIDEO REF:https://www.youtube.com/watch?v=ykZvMA-8S6s&t=1176s
+
+
 #include <bits/stdc++.h>
 using namespace std;
 

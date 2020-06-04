@@ -1,3 +1,27 @@
+///HELLO THERE~!
+///CREATED BY MD SADMAN MEHEDI SIVAN [IUT CSE(SWE)-19]
+
+#include<bits/stdc++.h>
+using namespace std;
+
+#define fastio          ios_base::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);
+#define read            freopen("blue.txt","r",stdin);
+#define write           freopen("red.txt","w",stdout);
+
+using ll=long long;
+using ull=unsigned long long;
+const double pi = 2*acos(0.0);
+
+int  main()
+{
+
+    fastio;
+
+
+    return 0;
+}
+
+
 
 ///HELLO THERE~!
 ///CREATED BY MD SADMAN MEHEDI SIVAN [IUT CSE(SWE)-19]

@@ -12,6 +12,9 @@ using ll=long long;
 using ull=unsigned long long;
 const double pi = 2*acos(0.0);
 
+long long a[200009], b[200009];
+vector<long long> v[200009];
+
 int  main()
 {
 
@@ -20,6 +23,7 @@ int  main()
 
     return 0;
 }
+
 
 
 

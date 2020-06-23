@@ -9,21 +9,19 @@ using namespace std;
 #define write           freopen("red.txt","w",stdout);
 
 using ll=long long;
-using ull=unsigned long long;
 const double pi = 2*acos(0.0);
+const long long MX = 2e5+7;
 
-long long a[200009], b[200009];
-vector<long long> v[200009];
+long long a[MX], b[MX];
+vector<long long> v[MX];
 
 int  main()
 {
-
     fastio;
 
 
     return 0;
 }
-
 
 
 

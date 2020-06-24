@@ -23,6 +23,15 @@ int  main()
     return 0;
 }
 
+/*
+----------------------
+Read question properly
+clear idea
+clean code
+check limits/array_size/long_long/special_cases(0/1/MAX/MIN)/fastIO/ENDL
+-----------------------------------------------------------
+*/
+
 
 
 ///HELLO THERE~!

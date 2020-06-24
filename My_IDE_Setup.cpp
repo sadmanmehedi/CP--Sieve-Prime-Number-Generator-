@@ -1,6 +1,13 @@
 ///HELLO THERE~!
 ///CREATED BY MD SADMAN MEHEDI SIVAN [IUT CSE(SWE)-19]
 
+//---------------------------------------------------------------
+//READ PROBLEM STATEMENT PROPERLY..
+//CLEAN IDEA:CLEAN CODE:CORNER CASE..
+//DOUBLE CHECK SIZE OF (ARRAY)/(VECTOR):SURE ABOUT FASTIO/ENDL..
+//CHECK WITH SOME CORNER CASE VALUES(1,2,3,MID,MAX,MIN,0,POS,NEG)..
+//-----------------------------------------------------------------
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -15,22 +22,20 @@ const long long MX = 2e5+7;
 long long a[MX], b[MX];
 vector<long long> v[MX];
 
-int  main()
+
+int main()
 {
     fastio;
 
 
     return 0;
+
 }
 
-/*
-----------------------
-Read question properly
-clear idea
-clean code
-check limits/array_size/long_long/special_cases(0/1/MAX/MIN)/fastIO/ENDL
------------------------------------------------------------
-*/
+
+
+
+
 
 
 

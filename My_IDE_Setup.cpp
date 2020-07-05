@@ -1,36 +1,30 @@
 ///HELLO THERE~!
-///CREATED BY MD SADMAN MEHEDI SIVAN [IUT CSE(SWE)-19]
-
-//---------------------------------------------------------------
-//READ PROBLEM STATEMENT PROPERLY..
-//CLEAN IDEA:CLEAN CODE:CORNER CASE..
-//DOUBLE CHECK SIZE OF (ARRAY)/(VECTOR):SURE ABOUT FASTIO/ENDL..
-//CHECK WITH SOME CORNER CASE VALUES(1,2,3,MID,MAX,MIN,0,POS,NEG)..
-//-----------------------------------------------------------------
+///CREATED BY MD SADMAN MEHEDI SIVAN(IUT CSE[SWE'19])
 
 #include<bits/stdc++.h>
 using namespace std;
 
-#define fastio          ios_base::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);
-#define read            freopen("blue.txt","r",stdin);
-#define write           freopen("red.txt","w",stdout);
+#define FASTIO          ios_base::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);
+#define READ            freopen("blue.txt","r",stdin);
+#define WRITE           freopen("red.txt","w",stdout);
 
 using ll=long long;
+using ull=unsigned long long;
 const double pi = 2*acos(0.0);
 const long long MX = 2e5+7;
-
-long long a[MX], b[MX];
-vector<long long> v[MX];
 
 
 int main()
 {
-    fastio;
+
+    FASTIO;
+
 
 
     return 0;
 
 }
+
 
 
 

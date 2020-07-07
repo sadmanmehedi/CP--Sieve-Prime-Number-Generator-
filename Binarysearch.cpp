@@ -1,5 +1,5 @@
 ///RECOMMENDED VIDEO:CODING BLOCKS,ERRICHTO
-///PRACTICE CODECHEF,HACCKERRANK,CODEFORCES AND TOPIC WISE PROBLEM SHEET
+///PRACTICE CODECHEF,HACCKERRANK,CODEFORCES,CSES AND TOPIC WISE PROBLEM SHEET
 
 
 #include<bits/stdc++.h>
@@ -12,7 +12,7 @@ long long binarysearch(long long arr[],long long n,long long key)
 
     while(low<=high)
     {
-        mid=(low+high)/2;
+        mid=low+(high-low)/2;
         if(arr[mid]==key)
         {
             return mid;

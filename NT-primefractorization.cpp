@@ -7,53 +7,53 @@ RESOURCE:https://www.youtube.com/watch?v=C9nNJWANqB0&list=PLgLCjVh3O6Si82JG4dSp6
         https://www.geeksforgeeks.org/prime-factor/
         
         
-        
-   ///HELLO THERE~!
+///HELLO THERE~!
 ///CREATED BY MD SADMAN MEHEDI SIVAN(IUT CSE[SWE'19])
- 
+
 #include<bits/stdc++.h>
 using namespace std;
- 
+
 #define FASTIO          ios_base::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);
 #define READ            freopen("input.txt","r",stdin);
 #define WRITE           freopen("red.txt","w",stdout);
- 
+
 using ll=long long;
 using ull=unsigned long long;
 const double pi = 2*acos(0.0);
 const long long MX = 2e5+7;
- 
-vector<bool> flag(1000000, true);
+
+vector<bool> flag(10000000, true);
 vector<long long> primes;
 vector<long long>factors;
- 
+
 void sieve()
 {
     flag[0] = false;
     flag[1] = false;
- 
-    for(long long i = 2; i*i < 1000000; i++)
+
+    for(long long i = 3; i*i < 10000000; i+=2)
         {
             if(flag[i])
             {
-                for(long long j = 2; i*j < 1000000; j++)
+                for(long long j = i; i*j < 10000000; j++)
                 {
                     flag[i*j] = false;
                 }
             }
         }
- 
- 
+
+
     primes.push_back(2);
-    for(long long i = 3; i < 1000000; i += 2)
+    for(long long i = 3; i < 10000000; i += 2)
         {
             if(flag[i])
             {
                 primes.push_back(i);
             }
         }
- 
+
 }
+
  
 long long primefactorization(long long f)
 {

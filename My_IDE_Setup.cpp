@@ -1,5 +1,5 @@
 ///HELLO THERE~!
-///CREATED BY MD SADMAN MEHEDI SIVAN(IUT CSE[SWE'19])
+///CODED BY MD SADMAN MEHEDI SIVAN(IUT CSE[SWE'19])
 
 #include<bits/stdc++.h>
 using namespace std;

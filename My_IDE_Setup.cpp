@@ -1,4 +1,4 @@
-///HELLO THERE~!
+///ASLAMUALAIKUM :)
 ///CODED BY MD SADMAN MEHEDI SIVAN(IUT CSE[SWE'19])
 
 #include<bits/stdc++.h>
@@ -10,14 +10,16 @@ using namespace std;
 
 using ll=long long;
 using ull=unsigned long long;
-const double pi = 2*acos(0.0);
-const long long MX = 2e5+7;
 
+const double pi = 2*acos(0.0);
+const long mx = LONG_MAX;
+const long mn = LONG_MIN;
 
 int main()
 {
 
     FASTIO;
+    
 
 
 

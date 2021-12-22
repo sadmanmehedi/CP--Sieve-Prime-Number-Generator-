@@ -1,6 +1,6 @@
 ///ASLAMUALAIKUM :)
 ///CODED BY MD SADMAN MEHEDI SIVAN(IUT CSE[SWE'19])
-
+///TIME COMPLEXITY O(n^2)
 //RAKIB SIR BOOK 
 
 #include<bits/stdc++.h>

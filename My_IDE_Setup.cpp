@@ -15,16 +15,6 @@ const double pi = 2*acos(0.0);
 const long mx = LONG_MAX;
 const long mn = LONG_MIN;
 
-long long vis1d[3000001];
-long long dis1d[3000001];
-
-vector<ll>graph[3000001];
-
-long long vis[1001][1001];
-long long dis[1001][1001];
-
-long long disx[]= {-2,-2,-1,-1,2,2,1,1};
-long long disy[]= {1,-1,2,-2,1,-1,-2,2};
 
 int main()
 {

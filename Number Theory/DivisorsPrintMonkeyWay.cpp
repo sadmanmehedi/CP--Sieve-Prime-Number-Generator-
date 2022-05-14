@@ -15,18 +15,30 @@ const long mn = LONG_MIN;
 int main()
 {
 
-        long long n;
-        cin>>n;
+    long long n;
+    cin >> n;
 
-        for(long long i=1;i<=n;i++)
+    vector<long long> divs;
+
+    for (long long i = 1; i * i <= n; i++)
+    {
+
+        if (n % i == 0)
         {
-            if(n%i==0)
-                cout<<i<<" ";
+            divs.push_back(i);
+
+            if (i != n / i) divs.push_back(n / i);
         }
-
-        return 0;
-
     }
+
+    sort(divs.begin(), divs.end());
+
+    for (auto x: divs) cout << x << ' ';
+
+
+    return 0;
+
+}
 
 
 

@@ -1,10 +1,5 @@
-///BRUTE FORCE YET LOGN
-
-
 ///ASLAMUALAIKUM ^^
 ///CODED BY MD SADMAN MEHEDI SIVAN(IUT CSE[SWE'19])
-
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -23,7 +18,7 @@ const long mn = LONG_MIN;
 const long long N=1e5 + 9 ;
 
 long long a[N];
-long long t[N*4];//Node wise sum er value rakhbo and ekhane N*4 deya kintu must
+long long t[N*4];//Node wise sum er value rakhbo
 
 void build(long long node,long long b,long long e)///Tree Build Kortesi
 {
@@ -64,27 +59,53 @@ long long querysum(long long node,long long b,long long e,long long i,long long 
 
     return querysum(l,b,mid,i,j)+querysum(r,mid+1,e,i,j);
 
+}
 
 
+void upd(long long node,long long b,long long e,long long i,long long x)//a[i]=x korbo
+{
+    if(b>i or e<i) return ;
+
+    if(b==e and b==i)
+    {
+        t[node]=x;//Value update kore dilam;
+        return ;
+    }
+
+    long long l=2*node;
+    long long r=2*node+1;
+    
+    long long mid=(b+e)/2;
+
+    upd(l,b,mid,i,x);
+    upd(r,mid+1,e,i,x);
+    t[node]=t[l]+t[r];
 
 }
 
 
 int main()
 {
-    long long n=1000;
+    long long n=7;
 
     for(long long i=1;i<=n;i++)
         {
             a[i]=i;
         }
 
-
+    ///a[7]=[1,2,3,4,5,6,7];
+    
     build(1,1,n);
 
     cout<<t[1]<<endl;
 
-    cout<<querysum(1,1,n,2,6);
+    cout<<querysum(1,1,n,2,6)<<endl;
+    
+    upd(1,1,n,3,10);
+
+    ///a[7]=[1,2,10,4,5,6,7];
+    
+    cout<<querysum(1,1,n,2,6)<<endl;
 
         return 0;
     }

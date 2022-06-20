@@ -1,7 +1,8 @@
+///TUTORIAL:https://www.youtube.com/watch?v=Uyue53xZf-w
+
 
 ///BRUTE FORCE YET LOGN
 ///XOR,MAX,MIM,GCD shob kaj korbe
-
 
 ///ASLAMUALAIKUM ^^
 ///CODED BY MD SADMAN MEHEDI SIVAN(IUT CSE[SWE'19])

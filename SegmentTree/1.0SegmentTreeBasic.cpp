@@ -68,7 +68,7 @@ long long querysum(long long node,long long b,long long e,long long i,long long 
 }
 
 
-void upd(long long node,long long b,long long e,long long i,long long x)//a[i]=x korbo
+void upd(long long node,long long b,long long e,long long i,long long x)//a[i]=x korbo & eta single node er note of any range
 {
     if(b>i or e<i) return ;
 
@@ -107,7 +107,7 @@ int main()
 
     cout<<querysum(1,1,n,2,6)<<endl;
     
-    upd(1,1,n,3,10);
+    upd(1,1,n,3,10);//Single Node er not range
 
     ///a[7]=[1,2,10,4,5,6,7];
     

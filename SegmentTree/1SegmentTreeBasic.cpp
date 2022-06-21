@@ -21,7 +21,7 @@ const double pi = 2*acos(0.0);
 const long mx = LONG_MAX;
 const long mn = LONG_MIN;
 
-const long long N=3e5 + 9 ;
+const long long N=3e5 + 9 ;///Array Size important
 
 long long a[N];
 long long t[N*4];//Node wise sum er value rakhbo

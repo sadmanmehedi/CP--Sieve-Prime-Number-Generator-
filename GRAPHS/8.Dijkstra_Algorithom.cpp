@@ -30,7 +30,7 @@ void reset(){
 class cmp{
 public:
     bool operator() (node &A, node &B){
-        if (A.cost > B.cost) return true;
+        if (A.cost > B.cost) return true;//Eita mane jetar cost kom sheta age pop hbe jodio beparta ektu ulta lagte pare but emnei kaj kore priority queue
         return false;
     }
 };

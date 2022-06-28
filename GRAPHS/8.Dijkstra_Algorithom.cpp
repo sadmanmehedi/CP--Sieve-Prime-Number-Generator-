@@ -1,5 +1,6 @@
 
 ///negative edge/cyle  a kaj korbena
+///https://www.youtube.com/watch?v=NjJetq78wh4
 
 #include<bits/stdc++.h>
 using namespace std;

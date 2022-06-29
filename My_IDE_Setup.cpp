@@ -15,6 +15,7 @@ const double pi = 2*acos(0.0);
 const long mx = LONG_LONG_MAX;
 const long mn = LONG_LONG_MIN;
 const long long N=5e5 + 9 ;
+const long long MODULO=1e9 + 7 ;
 
 
 int main()

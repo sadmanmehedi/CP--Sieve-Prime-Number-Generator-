@@ -20,7 +20,7 @@ int32_t main() {
   for (int i = 1; i <= n; i++) {
     if (indeg[i] == 0) {
       z.push_back(i);
-      vis[i] = true;
+     // vis[i] = true;
     }
   }
   vector<int> ans;
@@ -32,11 +32,12 @@ int32_t main() {
     int cur = z.back();
     z.pop_back();
     ans.push_back(cur);
+    vis[cur]=true;
     for (auto v: g[cur]) {
       indeg[v]--;
       if (!vis[v] and indeg[v] == 0) {
         z.push_back(v);
-        vis[v] = true;
+      //  vis[v] = true;
       }
     }
   }

@@ -1,3 +1,38 @@
+//IF THERE IS MORE THAN ONE WAY BETWEEN TWO NODES IN A GRAPH MEANS IT HAS A CYCLE
+
+
+///FOR UNDIRECTED GRAPH
+
+bool dfs(long long node,long long par)
+{
+  
+   vis[node]=1;
+  
+  for(auto u:node)
+  {
+    if(vis[u]==0)
+    {
+      if(dfs(u,node)==true;
+         return true;
+     }
+    
+         else
+         {
+           if(child!=par)
+             return true;
+         }
+         
+     }
+         
+       return false;
+   
+         }
+
+
+
+
+///FOR DIRECTED GRAPH
+
 #include<bits/stdc++.h>
 using namespace std;
 

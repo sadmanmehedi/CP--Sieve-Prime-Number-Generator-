@@ -1,5 +1,6 @@
 //IF THERE IS MORE THAN ONE WAY BETWEEN TWO NODES IN A GRAPH MEANS IT HAS A CYCLE
 
+///Directed Graph a Node 2 ta hoileo ekta Cycle create hoite pare Undirected Graph a atleast 3 ta nodes dorkar for making a graph
 
 ///FOR UNDIRECTED GRAPH
 

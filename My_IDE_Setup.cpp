@@ -1,5 +1,5 @@
-///ASLAMUALAIKUM
-///CODED BY SADMAN MEHEDI SIVAN [IUT CSE'19]
+///Aslamualaikum
+///Coded By Sadman Mehedi Sivan || IUT CSE'19
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -9,12 +9,10 @@ using namespace std;
 #define WRITE           freopen("output.txt","w",stdout);
 
 using ll=long long;
-using ull=unsigned long long;
 
-const double pi = 2*acos(0.0);
-const long mx = LONG_LONG_MAX;
-const long mn = LONG_LONG_MIN;
-const long long N=5e5 + 9 ;
+const long INF_POS = LONG_LONG_MAX;
+const long INF_NEG = LONG_LONG_MIN;
+const long long N=3e5 + 9 ;
 const long long MODULO=1e9 + 7 ;
 
 

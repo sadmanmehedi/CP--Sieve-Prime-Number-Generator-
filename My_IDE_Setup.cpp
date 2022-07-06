@@ -1,5 +1,5 @@
-///Aslamualaikum
-///Coded By Sadman Mehedi Sivan || IUT CSE'19
+///HELLO THERE!
+///CODED BY SADMAN MEHEDI SIVAN |~| IUT CSE'19
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -12,6 +12,7 @@ using ll=long long;
 
 const long INF_POS = LONG_LONG_MAX;
 const long INF_NEG = LONG_LONG_MIN;
+
 const long long N=3e5 + 9 ;
 const long long MODULO=1e9 + 7 ;
 

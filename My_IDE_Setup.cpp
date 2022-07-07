@@ -10,8 +10,8 @@ using namespace std;
 
 using ll=long long;
 
-const long INF_POS = LONG_LONG_MAX;
-const long INF_NEG = LONG_LONG_MIN;
+const long long INF_POS = LONG_LONG_MAX;
+const long long INF_NEG = LONG_LONG_MIN;
 
 const long long N=3e5 + 9 ;
 const long long MODULO=1e9 + 7 ;

@@ -11,6 +11,8 @@ int main()
 
     vector<int>vec(5);///(0,0,0,0,0)
 
+    v.push_back(20);
+
     ///iterator works as a memory address,it points
 
     vector <int>::iterator it=v.end(); //last er porer index a thakbe
@@ -35,15 +37,28 @@ int main()
 
     ///DELETION PART
 
-        v.erase(v.begin()+1);///index 1 will be deleted
+    v.erase(v.begin()+1);///index 1 will be deleted
 
 
-        v.erase(v.begin()+1,v.begin()+3);///index 1 and 2 will be deleted not 3,it works like this [)
+    v.erase(v.begin()+1,v.begin()+3);///index 1 and 2 will be deleted not 3,it works like this [)
 
-        ///INSERTATION PART
+    ///INSERTATION PART
 
-        v.insert(v.begin+2(1000));///2 index a 1000 insert hoye jabe
-        v.insert(v.begin(),2,10);///0 index a 2 ta 10 push hoye jabe
+    v.insert(v.begin+2(1000));///2 index a 1000 insert hoye jabe
+    v.insert(v.begin(),2,10);///0 index a 2 ta 10 push hoye jabe
+
+    ///INSERTING ONE VECTOR IN ANOTHER
+
+    vector<long long>copied(2,500);
+
+    v.insert(v.begin(),copied.begin(),copied.end());///copied purata v er age dhuke jabe
+
+
+    v.pop_back();
+
+    v.swap(copied);///both vector will be swapped
+
+    v.clear();///erase everything
 
 
 

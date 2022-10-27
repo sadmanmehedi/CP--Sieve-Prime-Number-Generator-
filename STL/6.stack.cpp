@@ -15,7 +15,7 @@ int main()
     st.push(3);
     st.push(4);
     st.emplace(5);
-
+///everything happens in O
 
     cout<<st.top()<<endl;
 

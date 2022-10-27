@@ -44,12 +44,12 @@ int main()
 
     ///INSERTATION PART
 
-    v.insert(v.begin+2(1000));///2 index a 1000 insert hoye jabe
+    v.insert(v.begin()+2,1000);///2 index a 1000 insert hoye jabe
     v.insert(v.begin(),2,10);///0 index a 2 ta 10 push hoye jabe
 
     ///INSERTING ONE VECTOR IN ANOTHER
 
-    vector<long long>copied(2,500);
+    vector<int>copied(2,500);
 
     v.insert(v.begin(),copied.begin(),copied.end());///copied purata v er age dhuke jabe
 

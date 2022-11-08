@@ -120,6 +120,32 @@ long long lowerbound(long long arr[],long long n,long long x)
 
 }
 
+long long upperbound(long long arr[],long long n,long long x)
+{
+
+    long long ans=n;//karon kichu na thakle vector last er iterator last a point kore
+
+    long long lo=0,hi=n-1;
+
+    while(lo<=hi)
+    {
+        long long mid=(lo+hi)/2;
+
+        if(arr[mid]>x)
+        {
+            ans=mid;
+            hi=mid-1;
+        }
+        else
+        {
+            lo=mid+1;
+        }
+    }
+
+    return ans;
+
+}
+
 int main()
 {
 

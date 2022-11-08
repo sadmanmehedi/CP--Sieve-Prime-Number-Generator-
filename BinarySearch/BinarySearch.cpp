@@ -1,5 +1,7 @@
 ///CODED BY SADMAN MEHEDI SIVAN
 
+//Includes the first and the last occurance
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -60,6 +62,36 @@ long long firstoccurance(long long arr[],long long n,long long x)
 
 }
 
+long long lastoccurance(long long arr[],long long n,long long x)
+{
+    long long lo=0,hi=n-1;
+
+    long long mid,ans=-1;
+
+    while(lo<=hi)
+    {
+        mid=(lo+hi)/2;
+
+        if(arr[mid]==x)
+        {
+            ans=mid;
+            lo=mid+1;
+            continue;
+        }
+        if(arr[mid]<x)
+        {
+            lo=mid+1;
+        }
+        else
+        {
+            hi=mid-1;
+        }
+    }
+
+    return ans;
+
+}
+
 int main()
 {
 
@@ -76,6 +108,7 @@ int main()
 
    cout<<binarysearch(a,n,x)<<endl;
    cout<<firstoccurance(a,n,x)<<endl;
+    cout<<lastoccurance(a,n,x)<<endl;
 
 
 

@@ -146,6 +146,16 @@ long long upperbound(long long arr[],long long n,long long x)
 
 }
 
+long long numberofoccurance(long long arr[],long long n,long long x)
+{
+
+    long long d=upperbound(arr,n,x)-lowerbound(arr,n,x);
+    return d;
+}
+
+
+
+
 int main()
 {
 
@@ -164,7 +174,8 @@ int main()
     cout<<firstoccurance(a,n,x)<<endl;
     cout<<lastoccurance(a,n,x)<<endl;
     cout<<lowerbound(a,n,x)<<endl;
-
+    cout<<upperbound(a,n,x)<<endl;
+    cout<<numberofoccurance(a,n,x)<<endl;
 
 
     return 0;

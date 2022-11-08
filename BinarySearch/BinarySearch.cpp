@@ -4,6 +4,8 @@
 
 ///CODED BY SADMAN MEHEDI SIVAN
 
+///CODED BY SADMAN MEHEDI SIVAN
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -149,7 +151,15 @@ long long upperbound(long long arr[],long long n,long long x)
 long long numberofoccurance(long long arr[],long long n,long long x)
 {
 
-    long long d=upperbound(arr,n,x)-lowerbound(arr,n,x);
+    ///First need to check whether it exists or not in the array
+    long long d=lowerbound(arr,n,x);
+    cout<<d<<endl;
+    
+    if(arr[d]!=x)
+    return -1;
+
+
+    d=upperbound(arr,n,x)-lowerbound(arr,n,x);
     return d;
 }
 
@@ -181,5 +191,7 @@ int main()
     return 0;
 
 }
+
+
 
 
